@@ -29,13 +29,17 @@ $H_A$: There is a difference in the vitamin C content of cabbages based on culti
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-The response variable (how muhc vitamin C) is numerical ; the input variable is catagorical. We have a Num ~ Cat
+The response variable (how much vitamin C) is numerical ; the input variable is catagorical. We have a Num ~ Cat
 
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
 ## Descriptive Results
+
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
 
 ### Graphical Descriptive Results
 
