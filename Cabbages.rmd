@@ -40,6 +40,7 @@ The response variable (how much vitamin C) is numerical ; the input variable is 
 ```{r}
 favstats(VitC~Cult,data=veggy)
 ```
+This table shows that cultivation method c52 has a higher vitamin C content than does c39. C52 shows an average difference of about 13mg. 
 
 ### Graphical Descriptive Results
 
