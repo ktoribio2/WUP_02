@@ -37,6 +37,9 @@ The response variable (how much vitamin C) is numerical ; the input variable is 
 
 ## Descriptive Results
 
+### Numerical Descriptive Results
+
+<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 ```{r}
 favstats(VitC~Cult,data=veggy)
 ```
@@ -49,18 +52,18 @@ This table shows that cultivation method c52 has a higher vitamin C content than
 ```{r}
 plot(VitC~Cult,data=veggy)
 ```
-
 This graph shows that c52 is higher in vitamin C as of c39
-
-### Numerical Descriptive Results
-
-<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ## Inferential Results
 
-<!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
-
+<!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!--> 
+```{r}
+t.test(VitC~Cult,data=veggy)
+```
+The p-value, 0.00000003405, is so small that we reject the null hypothesis therefore concluding that there is a vitamin c difference in the cultivation methods of c52 and c39.
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+The original question was if there is a significant difference in the average vitamin c level in cabbages between c52 and c39. Based on the t-test we found there is a significant difference in vitamin c content between c52 and c39. We found that c52 cultivation produces more vitamin C than c39.Therefore we can recommend the usage of c52.
