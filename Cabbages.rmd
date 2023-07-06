@@ -52,6 +52,7 @@ This table shows that cultivation method c52 has a higher vitamin C content than
 ```{r}
 plot(VitC~Cult,data=veggy)
 ```
+
 This graph shows that c52 is higher in vitamin C as of c39
 
 ## Inferential Results
